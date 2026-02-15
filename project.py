@@ -363,8 +363,7 @@ prediction_df.to_csv("Analysis/gdp_prediction_data.csv", index=False)
 # Uploading files/scripts on supabase server
 # 1. Configuration
 SUPABASE_URL: str = "https://qbspsxytvjwjpbvpcwkm.supabase.co"
-SUPABASE_KEY: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFic3BzeHl0dmp3anBidnBjd2ttIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NTQ1NTU0NiwiZXhwIjoyMDgxMDMxNTQ2fQ.bmnYRcw8UIEj7kcPVHuFHUdeCFB-KruTSje0mMYG_io"
-
+SUPABASE_KEY: str = ""
 # Define bucket and local folder paths
 BUCKET_NAME = "ict"
 LOCAL_FOLDER_PATH = r"C:\Users\Suspiciousstew\OneDrive - National University of Sciences & Technology\Desktop\NUST Courses\Applications of ICT\ict project" 
@@ -444,4 +443,5 @@ def upload_folder_to_supabase(local_folder_path: str, bucket_name: str, supabase
 
 # 2. Execute the Upload
 if __name__ == "__main__":
+
     upload_folder_to_supabase(LOCAL_FOLDER_PATH, BUCKET_NAME, supabase)
